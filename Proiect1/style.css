@@ -1,0 +1,154 @@
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+  }
+body{
+    min-width:290px;
+    color:black;
+    background-color:rgba(177,94,94,0.6) ;
+    font-family:"Open sans",Arial, sans-serif;
+    line-height:1.5;
+    
+  }
+  #navbar{
+    position:fixed;
+    min-width:290px;
+    background-color:rgb(218, 212, 212);
+    border-right:2px groove rgb(218, 212, 212);
+    box-shadow: 5px 10px 8px #888888;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:300px;
+  }
+  header{
+    color:black;
+    text-align:center;
+    margin:10px;
+    font-weight:thin;
+    font-size:1.8em;
+  }
+  #main-doc header{
+    text-align:left;
+    margin:0px;
+  }
+  a{
+    color:black;
+    text-decoration:none;
+  }
+  #navbar ul { 
+    height:71%;
+    background-color: rgb(173, 169, 169);
+    padding:0;
+    overflow-x:auto;
+    overflow-y:hidden;  
+  }
+  #navbar li{
+    list-style:none;
+    border-top:2px solid;
+    border-color: rgb(218, 212, 212);
+    position:relative;
+    width:100%;
+    color:black;
+  }
+  #navbar a{
+    display:block;
+    padding:10px 30px;
+    text-decoration:none;
+    color:black;
+    cursor:pointer; 
+    font-size:16px;
+    font-weight: bold;
+  }
+  #navbar a:hover{
+      
+      text-align:center;
+  }
+  #main-doc{
+    position:absolute;
+    margin-left:310px;
+    padding:20px;
+    margin-bottom:110px;
+  }
+  section article{
+    font-size:1.1em;
+    margin:15px;
+    color:black;
+  }
+  section li{
+    margin:15px 0px 0px 20px;
+  }
+  code{
+    display:block;
+    text-align:left;
+    background-color:#907163;
+    word-wrap:normal;
+    word-break:normal;
+    border-radius:5px;
+    line-height:2;
+    position:relative;
+    margin:10px;
+    padding:15px;
+    
+    
+  }
+  .main-section{
+      background-color: rgb(199, 81, 81, 0.5);
+      margin:20px;
+      padding:10px;
+      box-shadow: 5px 10px 8px #888888;
+      border:2px solid grey;
+      border-radius:10px;
+  }
+  @media screen and (max-width:815px){
+    #navbar ul{
+      border:1px solid;
+      height:220px;
+      overflow:auto;
+      scrollbar-color:black;
+    }
+    #navbar ::-webkit-scrollbar {
+        width: 5px;
+        
+      }
+    #navbar::-webkit-scrollbar-track {
+        background:#5cdb95
+      }
+    #navbar ::-webkit-scrollbar-thumb {
+        background-color: #0c1c63;
+        border-radius:10px;
+      }
+    #navbar{
+      position:absolute;
+      border-bottom:2px solid;
+      border:none;
+      top:0;
+      padding:0;
+      margin:0;
+      background-color:white;
+      width:100%;
+      max-height:290px;
+      z-index:1;
+      background-color: #5cdb95;  
+    }
+    #main-doc{
+      position:relative;
+      margin-left:0;
+      margin-top:270px;
+    }
+  }
+  @media screen and (max-width:400px){
+    #main-doc{
+      margin-left:-10px;
+    }
+    code{
+      width:100%;
+      word-break:normal;
+      word-wrap:normal;
+      margin-left:-20px;
+      padding:15px;
+      padding-left:10px;
+      padding-right:45px;
+      min-width:233px;
+    }
+  }
